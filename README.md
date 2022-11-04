@@ -11,6 +11,36 @@ yarn add swiper
 
 '''
 
+# github 배포
+'''
+yarn add gh-pages
+'''
+
+'''
+package.json file
+"homepage": "https://de0811.github.io/react-netflix-clone/",
+
+"scripts": {
+  ...
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
+  },
+'''
+
+'''
+index.js
+<!-- basename 는 repository 이름을 작성 -->
+<BrowserRouter basename="react-netflix-clone">
+    <App />
+  </BrowserRouter>
+'''
+
+'''
+yarn run deploy
+'''
+
+github 페이지에서 등록시킨 레포지토리 -> Settings -> Pages -> Build and deployment -> Branch [Select]
+
 # 실행
 yarn run start
 
